@@ -236,21 +236,75 @@ export default function Home() {
         </div>
       )}
 
-      {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-100 to-pink-100 rounded-full px-6 py-3 mb-8 shadow-sm">
-            <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
-            <span className="text-orange-700 font-semibold">🌅 9:00 AM - Morning Sun Active</span>
+      {/* Bold Modern Hero Section */}
+      <div className="max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center mb-20">
+          {/* Bold Welcome Badge */}
+          <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-orange-500 to-pink-600 rounded-full px-10 py-5 mb-12 shadow-2xl border-2 border-orange-300 transform hover:scale-105 transition-all duration-300">
+            <div className="w-4 h-4 bg-white rounded-full animate-pulse"></div>
+            <span className="text-white font-black text-xl tracking-wide">🌅 WELCOME TO SUNSPOT BERLIN</span>
+            <div className="w-4 h-4 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
           </div>
           
-          <h2 className="text-5xl font-bold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 bg-clip-text text-transparent mb-6">
-            Find Your Sunny Spot
-          </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Discover Berlin cafés where the morning sun is shining right now. 
-            Perfect for your morning coffee ritual.
+          {/* Bold Main Headline */}
+          <h1 className="text-8xl font-black bg-gradient-to-r from-gray-900 via-orange-500 to-pink-600 bg-clip-text text-transparent mb-10 leading-none tracking-tight">
+            FIND YOUR
+            <br />
+            <span className="text-7xl bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">
+              SUNNY MOMENT
+            </span>
+          </h1>
+          
+          <p className="text-3xl font-bold text-gray-700 mb-16 max-w-4xl mx-auto leading-relaxed">
+            Discover Berlin's <span className="text-orange-600 font-black">best outdoor cafés</span> 
+            <br />
+            perfectly timed for when the <span className="text-pink-600 font-black">sun is shining</span>
           </p>
+
+          {/* Bold Feature Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
+            <div className="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl p-8 shadow-2xl border-2 border-orange-300 hover:shadow-3xl hover:scale-105 transition-all duration-500 transform">
+              <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <div className="text-4xl">☀️</div>
+              </div>
+              <h3 className="text-2xl font-black text-white mb-4 text-center">REAL-TIME SUN TRACKING</h3>
+              <p className="text-white font-bold text-center leading-relaxed">Know exactly which terraces are sunny right now, powered by accurate sun position calculations.</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-3xl p-8 shadow-2xl border-2 border-green-300 hover:shadow-3xl hover:scale-105 transition-all duration-500 transform">
+              <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <div className="text-4xl">🌿</div>
+              </div>
+              <h3 className="text-2xl font-black text-white mb-4 text-center">OUTDOOR SEATING ONLY</h3>
+              <p className="text-white font-bold text-center leading-relaxed">Every venue is verified to have outdoor seating, so you can enjoy the fresh air and sunshine.</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-3xl p-8 shadow-2xl border-2 border-blue-300 hover:shadow-3xl hover:scale-105 transition-all duration-500 transform">
+              <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <div className="text-4xl">📍</div>
+              </div>
+              <h3 className="text-2xl font-black text-white mb-4 text-center">LIVE BERLIN DATA</h3>
+              <p className="text-white font-bold text-center leading-relaxed">Real cafés and restaurants from OpenStreetMap, updated with the latest information.</p>
+            </div>
+          </div>
+
+          {/* Bold Current Status */}
+          <div className="bg-gradient-to-r from-orange-500 to-pink-600 rounded-3xl p-10 shadow-2xl border-4 border-orange-300 max-w-4xl mx-auto transform hover:scale-105 transition-all duration-500">
+            <div className="flex items-center justify-center space-x-6 mb-6">
+              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg">
+                <div className="text-4xl">🌅</div>
+              </div>
+              <div className="text-left">
+                <div className="text-4xl font-black text-white">9:00 AM</div>
+                <div className="text-2xl font-bold text-orange-100">MORNING SUN ACTIVE</div>
+              </div>
+            </div>
+            <p className="text-white text-2xl font-bold text-center leading-relaxed">
+              PERFECT TIME FOR YOUR MORNING COFFEE! 
+              <br />
+              <span className="text-orange-100">The sun is rising in the east, creating beautiful sunny spots across Berlin's outdoor cafés.</span>
+            </p>
+          </div>
         </div>
 
         {/* Modern View Toggle */}
