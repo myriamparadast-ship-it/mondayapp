@@ -46,13 +46,13 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-100 via-orange-100 to-red-100">
       {/* Modern Header */}
       <div className="bg-white/70 backdrop-blur-xl shadow-sm border-b border-white/20">
         <div className="max-w-7xl mx-auto px-6 py-8">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg">
                 <div className="text-2xl">☀️</div>
               </div>
               <div>
@@ -240,30 +240,30 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-20">
           {/* Bold Welcome Badge */}
-          <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-orange-500 to-pink-600 rounded-full px-10 py-5 mb-12 shadow-2xl border-2 border-orange-300 transform hover:scale-105 transition-all duration-300">
+          <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-yellow-500 to-red-600 rounded-full px-10 py-5 mb-12 shadow-2xl border-2 border-yellow-400 transform hover:scale-105 transition-all duration-300">
             <div className="w-4 h-4 bg-white rounded-full animate-pulse"></div>
             <span className="text-white font-black text-xl tracking-wide">🌅 WELCOME TO SUNSPOT BERLIN</span>
             <div className="w-4 h-4 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
           </div>
           
           {/* Bold Main Headline */}
-          <h1 className="text-8xl font-black bg-gradient-to-r from-gray-900 via-orange-500 to-pink-600 bg-clip-text text-transparent mb-10 leading-none tracking-tight">
+          <h1 className="text-8xl font-black bg-gradient-to-r from-gray-900 via-yellow-500 to-red-600 bg-clip-text text-transparent mb-10 leading-none tracking-tight">
             FIND YOUR
             <br />
-            <span className="text-7xl bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">
+            <span className="text-7xl bg-gradient-to-r from-yellow-500 to-red-600 bg-clip-text text-transparent">
               SUNNY MOMENT
             </span>
           </h1>
           
           <p className="text-3xl font-bold text-gray-700 mb-16 max-w-4xl mx-auto leading-relaxed">
-            Discover Berlin's <span className="text-orange-600 font-black">best outdoor cafés</span> 
+            Discover Berlin's <span className="text-yellow-600 font-black">best outdoor cafés</span> 
             <br />
-            perfectly timed for when the <span className="text-pink-600 font-black">sun is shining</span>
+            perfectly timed for when the <span className="text-red-600 font-black">sun is shining</span>
           </p>
 
           {/* Bold Feature Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
-            <div className="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl p-8 shadow-2xl border-2 border-orange-300 hover:shadow-3xl hover:scale-105 transition-all duration-500 transform">
+            <div className="bg-gradient-to-br from-yellow-500 to-orange-600 rounded-3xl p-8 shadow-2xl border-2 border-yellow-400 hover:shadow-3xl hover:scale-105 transition-all duration-500 transform">
               <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <div className="text-4xl">☀️</div>
               </div>
@@ -271,7 +271,7 @@ export default function Home() {
               <p className="text-white font-bold text-center leading-relaxed">Know exactly which terraces are sunny right now, powered by accurate sun position calculations.</p>
             </div>
 
-            <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-3xl p-8 shadow-2xl border-2 border-green-300 hover:shadow-3xl hover:scale-105 transition-all duration-500 transform">
+            <div className="bg-gradient-to-br from-orange-600 to-red-700 rounded-3xl p-8 shadow-2xl border-2 border-orange-400 hover:shadow-3xl hover:scale-105 transition-all duration-500 transform">
               <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <div className="text-4xl">🌿</div>
               </div>
@@ -279,7 +279,7 @@ export default function Home() {
               <p className="text-white font-bold text-center leading-relaxed">Every venue is verified to have outdoor seating, so you can enjoy the fresh air and sunshine.</p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-3xl p-8 shadow-2xl border-2 border-blue-300 hover:shadow-3xl hover:scale-105 transition-all duration-500 transform">
+            <div className="bg-gradient-to-br from-red-600 to-red-800 rounded-3xl p-8 shadow-2xl border-2 border-red-400 hover:shadow-3xl hover:scale-105 transition-all duration-500 transform">
               <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <div className="text-4xl">📍</div>
               </div>
@@ -289,20 +289,20 @@ export default function Home() {
           </div>
 
           {/* Bold Current Status */}
-          <div className="bg-gradient-to-r from-orange-500 to-pink-600 rounded-3xl p-10 shadow-2xl border-4 border-orange-300 max-w-4xl mx-auto transform hover:scale-105 transition-all duration-500">
+          <div className="bg-gradient-to-r from-yellow-500 to-red-600 rounded-3xl p-10 shadow-2xl border-4 border-yellow-400 max-w-4xl mx-auto transform hover:scale-105 transition-all duration-500">
             <div className="flex items-center justify-center space-x-6 mb-6">
               <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg">
                 <div className="text-4xl">🌅</div>
               </div>
               <div className="text-left">
                 <div className="text-4xl font-black text-white">9:00 AM</div>
-                <div className="text-2xl font-bold text-orange-100">MORNING SUN ACTIVE</div>
+                <div className="text-2xl font-bold text-yellow-100">MORNING SUN ACTIVE</div>
               </div>
             </div>
             <p className="text-white text-2xl font-bold text-center leading-relaxed">
               PERFECT TIME FOR YOUR MORNING COFFEE! 
               <br />
-              <span className="text-orange-100">The sun is rising in the east, creating beautiful sunny spots across Berlin's outdoor cafés.</span>
+              <span className="text-yellow-100">The sun is rising in the east, creating beautiful sunny spots across Berlin's outdoor cafés.</span>
             </p>
           </div>
         </div>
@@ -314,7 +314,7 @@ export default function Home() {
               onClick={() => setViewMode('map')}
               className={`px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 ${
                 viewMode === 'map'
-                  ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg transform scale-105'
+                  ? 'bg-gray-800 text-white shadow-lg transform scale-105'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
               }`}
             >
@@ -324,7 +324,7 @@ export default function Home() {
               onClick={() => setViewMode('list')}
               className={`px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 ${
                 viewMode === 'list'
-                  ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg transform scale-105'
+                  ? 'bg-gray-800 text-white shadow-lg transform scale-105'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
               }`}
             >
@@ -363,11 +363,11 @@ export default function Home() {
           ) : viewMode === 'map' ? (
             <div>
               <div className="flex items-center justify-center mb-6">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center mr-3">
+                <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-red-500 rounded-full flex items-center justify-center mr-3">
                   <div className="text-white text-sm">🗺️</div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">Berlin Café Map</h3>
-                <div className="ml-4 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                <div className="ml-4 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
                   {cafes.length} outdoor cafés
                 </div>
               </div>
@@ -376,11 +376,11 @@ export default function Home() {
           ) : (
             <div>
               <div className="flex items-center justify-center mb-6">
-                <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center mr-3">
+                <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-red-500 rounded-full flex items-center justify-center mr-3">
                   <div className="text-white text-sm">📋</div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">Berlin Cafés</h3>
-                <div className="ml-4 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                <div className="ml-4 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
                   {cafes.length} outdoor cafés
                 </div>
               </div>

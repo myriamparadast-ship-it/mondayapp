@@ -41,7 +41,7 @@ export default function CafeList({ cafes }: CafeListProps) {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-orange-200 to-pink-300 flex items-center justify-center">
+                  <div className="w-full h-full bg-gradient-to-br from-yellow-200 to-red-300 flex items-center justify-center">
                     <div className="text-center">
                       <div className="text-4xl mb-2">☕</div>
                       <div className="text-xs font-semibold text-gray-700">{cafe.amenity === 'restaurant' ? '🍽️' : '☕'}</div>

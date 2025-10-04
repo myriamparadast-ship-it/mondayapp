@@ -31,31 +31,31 @@ export default function CafeMap({ cafes }: CafeMapProps) {
   }
 
   return (
-    <div className="h-96 w-full rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-green-100 to-blue-100 relative">
+    <div className="h-96 w-full rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-yellow-200 to-red-200 relative">
       {/* Map Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-green-200 via-blue-200 to-indigo-200 opacity-60"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-yellow-300 via-orange-300 to-red-300 opacity-60"></div>
       
       {/* Sun Zone Visualization */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Sun Zone Circles */}
         <div className="relative">
           {/* Outer Sun Zone */}
-          <div className="absolute w-48 h-48 rounded-full bg-yellow-200 opacity-30 animate-pulse"></div>
+          <div className="absolute w-48 h-48 rounded-full bg-yellow-300 opacity-30 animate-pulse"></div>
           {/* Middle Sun Zone */}
-          <div className="absolute w-32 h-32 rounded-full bg-orange-300 opacity-50 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute w-32 h-32 rounded-full bg-orange-400 opacity-50 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
           {/* Inner Sun Zone */}
-          <div className="absolute w-16 h-16 rounded-full bg-yellow-400 opacity-70 animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute w-16 h-16 rounded-full bg-yellow-500 opacity-70 animate-pulse" style={{ animationDelay: '1s' }}></div>
           {/* Sun Center */}
-          <div className="absolute w-8 h-8 rounded-full bg-yellow-500 opacity-90 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute w-8 h-8 rounded-full bg-red-500 opacity-90 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
         </div>
       </div>
       
       {/* Customer Location */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <div className="w-6 h-6 bg-blue-500 rounded-full border-2 border-white shadow-lg flex items-center justify-center">
+        <div className="w-6 h-6 bg-gray-800 rounded-full border-2 border-white shadow-lg flex items-center justify-center">
           <div className="text-white text-xs">👤</div>
         </div>
-        <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-white/90 px-2 py-1 rounded text-xs font-semibold text-blue-600">
+        <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-white/90 px-2 py-1 rounded text-xs font-semibold text-gray-800">
           You are here
         </div>
       </div>
@@ -103,7 +103,7 @@ export default function CafeMap({ cafes }: CafeMapProps) {
       <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-2 rounded-lg shadow-lg">
         <div className="text-xs space-y-1">
           <div className="flex items-center space-x-2">
-            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+            <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
             <span>Now Sunny</span>
           </div>
           <div className="flex items-center space-x-2">
