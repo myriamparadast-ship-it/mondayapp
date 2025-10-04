@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Café Einstein",
+    "lat": 52.5200,
+    "lon": 13.4050,
+    "terrace_orientation_deg": 180,
+    "reserve_url": "https://www.cafe-einstein.com/reservations",
+    "opens_at": "08:00",
+    "closes_at": "22:00",
+    "photo_url": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&h=300&fit=crop",
+    "neighborhood": "Mitte",
+    "address": "Unter den Linden 42, 10117 Berlin"
+  },
+  {
+    "id": 2,
+    "name": "Café am Neuen See",
+    "lat": 52.5150,
+    "lon": 13.3500,
+    "terrace_orientation_deg": 135,
+    "reserve_url": "https://www.cafe-am-neuen-see.de/reservations",
+    "opens_at": "09:00",
+    "closes_at": "23:00",
+    "photo_url": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&h=300&fit=crop",
+    "neighborhood": "Tiergarten",
+    "address": "Lichtensteinallee 2, 10787 Berlin"
+  },
+  {
+    "id": 3,
+    "name": "Café Kranzler",
+    "lat": 52.5040,
+    "lon": 13.3300,
+    "terrace_orientation_deg": 90,
+    "reserve_url": "https://www.kranzler.de/reservations",
+    "opens_at": "07:00",
+    "closes_at": "24:00",
+    "photo_url": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&h=300&fit=crop",
+    "neighborhood": "Charlottenburg",
+    "address": "Kurfürstendamm 18, 10719 Berlin"
+  },
+  {
+    "id": 4,
+    "name": "Café am Engelbecken",
+    "lat": 52.4900,
+    "lon": 13.4200,
+    "terrace_orientation_deg": 225,
+    "reserve_url": "https://www.cafe-engelbecken.de/reservations",
+    "opens_at": "10:00",
+    "closes_at": "20:00",
+    "photo_url": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&h=300&fit=crop",
+    "neighborhood": "Kreuzberg",
+    "address": "Engelbecken 1, 10999 Berlin"
+  },
+  {
+    "id": 5,
+    "name": "Café am Weinberg",
+    "lat": 52.5400,
+    "lon": 13.4100,
+    "terrace_orientation_deg": 270,
+    "reserve_url": "https://www.cafe-weinberg.de/reservations",
+    "opens_at": "09:00",
+    "closes_at": "21:00",
+    "photo_url": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&h=300&fit=crop",
+    "neighborhood": "Prenzlauer Berg",
+    "address": "Weinbergsweg 1, 10119 Berlin"
+  }
+]
