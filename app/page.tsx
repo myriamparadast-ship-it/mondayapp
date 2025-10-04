@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import CafeList from '@/components/CafeList';
 import { fetchOSMCafesWithOutdoorSeating, OSMCafe } from '@/lib/osmService';
+import { Hero } from '@/components/ui/hero-1';
 
 // Dynamically import CafeMap to avoid SSR issues
 const CafeMap = dynamic(() => import('@/components/CafeMap'), {
@@ -236,31 +237,20 @@ export default function Home() {
         </div>
       )}
 
-      {/* Bold Modern Hero Section */}
-      <div className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-center mb-20">
-          {/* Bold Welcome Badge */}
-          <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-yellow-500 to-red-600 rounded-full px-10 py-5 mb-12 shadow-2xl border-2 border-yellow-400 transform hover:scale-105 transition-all duration-300">
-            <div className="w-4 h-4 bg-white rounded-full animate-pulse"></div>
-            <span className="text-white font-black text-xl tracking-wide">🌅 WELCOME TO SUNSPOT BERLIN</span>
-            <div className="w-4 h-4 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-          </div>
-          
-          {/* Bold Main Headline */}
-          <h1 className="text-8xl font-black bg-gradient-to-r from-gray-900 via-yellow-500 to-red-600 bg-clip-text text-transparent mb-10 leading-none tracking-tight">
-            FIND YOUR
-            <br />
-            <span className="text-7xl bg-gradient-to-r from-yellow-500 to-red-600 bg-clip-text text-transparent">
-              SUNNY MOMENT
-            </span>
-          </h1>
-          
-          <p className="text-3xl font-bold text-gray-700 mb-16 max-w-4xl mx-auto leading-relaxed">
-            Discover Berlin's <span className="text-yellow-600 font-black">best outdoor cafés</span> 
-            <br />
-            perfectly timed for when the <span className="text-red-600 font-black">sun is shining</span>
-          </p>
+      {/* New Hero Component */}
+      <Hero
+        eyebrow="🌅 WELCOME TO SUNSPOT BERLIN"
+        title="FIND YOUR SUNNY MOMENT"
+        subtitle="Discover Berlin's best outdoor cafés perfectly timed for when the sun is shining"
+        ctaLabel="Find Your Sunny Moment"
+        ctaHref="#cafes"
+      />
 
+      {/* Feature Cards Section */}
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-black text-gray-800 mb-8">Why Choose SunSpot Berlin?</h2>
+          
           {/* Bold Feature Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
             <div className="bg-gradient-to-br from-yellow-500 to-orange-600 rounded-3xl p-8 shadow-2xl border-2 border-yellow-400 hover:shadow-3xl hover:scale-105 transition-all duration-500 transform">
@@ -334,7 +324,7 @@ export default function Home() {
         </div>
 
         {/* Main Content Card */}
-        <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/20">
+        <div id="cafes" className="bg-white/60 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/20">
           {loading ? (
             <div className="flex items-center justify-center h-96">
               <div className="text-center">
